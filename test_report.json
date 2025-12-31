@@ -1,0 +1,103 @@
+{
+  "passed": [
+    {
+      "test": "Health Check",
+      "endpoint": "/health",
+      "method": "GET",
+      "timestamp": "2025-12-31T15:07:04.433731"
+    },
+    {
+      "test": "Root Endpoint",
+      "endpoint": "/",
+      "method": "GET",
+      "timestamp": "2025-12-31T15:07:04.435993"
+    },
+    {
+      "test": "Bank Registration",
+      "endpoint": "/api/auth/bank/register",
+      "method": "POST",
+      "timestamp": "2025-12-31T15:07:07.106636"
+    },
+    {
+      "test": "Bank Login",
+      "endpoint": "/api/auth/bank/login",
+      "method": "POST",
+      "timestamp": "2025-12-31T15:07:07.772492"
+    },
+    {
+      "test": "Bank Profile",
+      "endpoint": "/api/bank/me",
+      "method": "GET",
+      "timestamp": "2025-12-31T15:07:08.074857"
+    },
+    {
+      "test": "Bank Update Profile",
+      "endpoint": "/api/bank/me",
+      "method": "PUT",
+      "timestamp": "2025-12-31T15:07:08.777508"
+    },
+    {
+      "test": "Bank Upload Certification",
+      "endpoint": "/api/bank/certification/upload",
+      "method": "POST",
+      "timestamp": "2025-12-31T15:07:11.120422"
+    },
+    {
+      "test": "Create Consent Templates",
+      "endpoint": "/api/bank/consents/templates",
+      "method": "POST",
+      "timestamp": "2025-12-31T15:07:13.928353"
+    },
+    {
+      "test": "Get Consent Templates",
+      "endpoint": "/api/bank/consents/templates",
+      "method": "GET",
+      "timestamp": "2025-12-31T15:07:14.333715"
+    },
+    {
+      "test": "List Banks (Public)",
+      "endpoint": "/api/public/banks",
+      "method": "GET",
+      "timestamp": "2025-12-31T15:07:14.640011"
+    },
+    {
+      "test": "Donor Lead Creation (Expected Validation)",
+      "endpoint": "/api/donor/lead",
+      "method": "POST",
+      "timestamp": "2025-12-31T15:07:14.942959"
+    },
+    {
+      "test": "Unauthorized Access Protection",
+      "endpoint": "/api/bank/me",
+      "method": "GET",
+      "timestamp": "2025-12-31T15:07:14.948826"
+    },
+    {
+      "test": "Invalid Login Protection",
+      "endpoint": "/api/auth/bank/login",
+      "method": "POST",
+      "timestamp": "2025-12-31T15:07:15.258972"
+    },
+    {
+      "test": "Duplicate Registration Protection",
+      "endpoint": "/api/auth/bank/register",
+      "method": "POST",
+      "timestamp": "2025-12-31T15:07:15.560692"
+    },
+    {
+      "test": "Get Bank Donors",
+      "endpoint": "/api/bank/donors",
+      "method": "GET",
+      "timestamp": "2025-12-31T15:07:15.867150"
+    },
+    {
+      "test": "Update Counseling Config",
+      "endpoint": "/api/bank/counseling/config",
+      "method": "PUT",
+      "timestamp": "2025-12-31T15:07:16.174604"
+    }
+  ],
+  "failed": [],
+  "total": 16,
+  "timestamp": "2025-12-31T15:07:04.425154"
+}
