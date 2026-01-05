@@ -16,7 +16,7 @@ from models.models import (
 # ========== Base Schemas ==========
 class UUIDMixin(BaseModel):
     """Mixin to handle UUID to string conversion for id fields"""
-    @field_validator('id', mode='before', check_fields=False)
+    @field_validator('id', 'bank_id', 'donor_id', 'template_id', 'consent_id', 'session_id', 'user_id', mode='before', check_fields=False)
     @classmethod
     def convert_uuid_to_str(cls, value):
         if isinstance(value, uuid_module.UUID):
