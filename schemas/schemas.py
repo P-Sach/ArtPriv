@@ -91,7 +91,7 @@ class BankResponse(UUIDMixin, TimestampMixin):
     counseling_config: Optional[Dict[str, Any]] = None
 
 
-class BankListItem(BaseModel):
+class BankListItem(UUIDMixin):
     id: str
     name: str
     address: Optional[str] = None
@@ -99,8 +99,7 @@ class BankListItem(BaseModel):
     description: Optional[str] = None
     logo_url: Optional[str] = None
     
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 # ========== Donor Schemas ==========
